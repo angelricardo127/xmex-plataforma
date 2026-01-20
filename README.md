@@ -31,10 +31,10 @@ Proyecto desarrollado por estudiantes de **Ingeniería en Sistemas Computacional
 
 | Integrante | Rol Principal | GitHub User |
 |------------|---------------|-------------|
-| **Ángel Ricardo Hernández Nava** | Project Lead  | @ |
-| **Uriel Sebastián Herrera Hermosillo** | Backend / Data | @ |
-| **André Alessandro González Paulin** | UI Designer / Frontend | @ |
-| **Victor Hugo Ojeda Cabrera** | Analista / Backend | @ |
+| **Ángel Ricardo Hernández Nava** | Project Lead  | @angelricardo127 |
+| **Uriel Sebastián Herrera Hermosillo** | Backend / Data | @urielsebastianhh |
+| **André Alessandro González Paulin** | UI Designer / Frontend | @andregp1019 |
+| **Victor Hugo Ojeda Cabrera** | Analista / Backend | @Voguh23 |
 
 ---
 
