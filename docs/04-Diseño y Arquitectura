@@ -1,1 +1,79 @@
+1.Arquitectura de Software
+El proyecto utiliza una arquitectura de tres capas (3-Tier Architecture), adecuada para aplicaciones web pequeñas y medianas.
 
+.Capa de Presentación (Frontend)
+Implementada con HTML y CSS
+Encargada de mostrar la información al usuario final
+Incluye:
+Cards de productos artesanales
+Diseño responsivo para dispositivos móviles
+Paleta de colores verde, blanco y rojo
+
+.Capa de Lógica de Negocio (Backend)
+Controla el funcionamiento del sistema
+Maneja:
+Registro e inicio de sesión de usuarios
+Publicación de productos por comerciantes
+Gestión de pedidos
+Se comunica con la base de datos para obtener y guardar información
+(En este proyecto se plantea a nivel conceptual, ya que el enfoque es académico)
+
+.Capa de Datos (Base de Datos)
+Implementada en SQL Server
+Almacena información en las tablas:
+Usuarios
+Productos
+Pedidos
+
+2.Diseño de Interfaz (UI Design)
+El diseño de la interfaz se enfocó en ser claro, intuitivo y representativo de la identidad mexicana.
+.Paleta de Colores
+Verde: Representa tradición, naturaleza y artesanía
+Blanco: Brinda limpieza visual y facilita la lectura
+Rojo: Usado como color de acento para precios y botones
+Estos colores están definidos mediante variables CSS, facilitando su mantenimiento y escalabilidad.
+
+.Diseño de Cards de Productos
+Cada producto se presenta en una tarjeta visual (card) que contiene:
+.Imagen del producto
+.Nombre
+.Descripción breve
+.Precio
+.Botón de acción
+.Las cards utilizan:
+.Bordes redondeados
+.Sombras suaves
+.Animaciones al pasar el cursor
+Esto mejora la experiencia del usuario y hace el sitio más atractivo.
+Garantiza la integridad de los datos mediante llaves primarias y foráneas
+
+.Diseño Responsivo
+Uso de CSS Grid
+Adaptación automática a pantallas pequeñas
+Optimización para celulares y tablets
+El diseño garantiza una correcta visualización en diferentes dispositivos sin necesidad de frameworks externos.
+
+3.Diseño de Componentes
+El sistema está dividido en componentes reutilizables, lo que facilita el mantenimiento.
+ .Componentes del Frontend
+Card de Producto
+Botón de acción
+Contenedor de productos
+Header y footer (propuestos)
+Cada componente tiene estilos independientes definidos en el archivo CSS.
+
+ .Componentes del Sistema
+Componente de usuarios
+Componente de productos
+Componente de pedidos
+Estos componentes se comunican entre sí mediante la lógica del sistema.
+
+4.Principios de Diseño Aplicados
+Separación de responsabilidades:
+El diseño visual (CSS) está separado de la lógica del sistema.
+Reusabilidad:
+Las cards y botones pueden reutilizarse en diferentes secciones.
+Escalabilidad:
+El sistema permite agregar más productos y usuarios sin afectar el diseño.
+Usabilidad:
+Interfaz clara y fácil de usar para cualquier tipo de usuario.
