@@ -8,36 +8,108 @@
 </head>
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">xmex</div>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#catalogo">Catálogo</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="logo">xmex</div>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#" onclick="mostrarLogin()">Login</a></li>
+            <li><a href="#" onclick="mostrarRegistro()">Registro</a></li>
+            <li><a href="#" onclick="verCarrito()">Carrito</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <section id="inicio">
-        <h1>Lo mejor de México en tus manos</h1>
-        <p>Plataforma de venta de productos 100% artesanales.</p>
-        <button>Ver Productos</button>
-    </section>
+<!-- SECCIÓN INICIO -->
+<section id="inicio">
+    <h1>Lo mejor de México en tus manos</h1>
+    <p>Plataforma de venta de productos 100% artesanales.</p>
+    <button onclick="location.href='#catalogo'">Ver Productos</button>
+</section>
 
-    <section id="catalogo">
-        <h2>Nuestros Productos</h2>
-        <div class="grid-productos">
-            <article>Producto 1</article>
-            <article>Producto 2</article>
-            <article>Producto 3</article>
-        </div>
-    </section>
+<!-- CATÁLOGO -->
+<section id="catalogo">
+    <h2>Nuestros Productos</h2>
 
-    <footer>
-        <p>&copy; 2026 xmex - Desarrollado por estudiantes del ITL</p>
-    </footer>
+    <div class="grid-productos">
+
+        <article>
+            <h3>Alebrije de madera</h3>
+            <p>Figura artesanal tallada y pintada a mano.</p>
+            <strong>$950</strong><br><br>
+            <button onclick="agregarAlCarrito('Alebrije de madera', 950)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article>
+            <h3>Rebozo artesanal</h3>
+            <p>Textil tradicional mexicano elaborado a mano.</p>
+            <strong>$850</strong><br><br>
+            <button onclick="agregarAlCarrito('Rebozo artesanal', 850)">
+                Agregar al carrito
+            </button>
+        </article>
+
+        <article>
+            <h3>Jarrón de barro negro</h3>
+            <p>Pieza artesanal originaria de Oaxaca.</p>
+            <strong>$1200</strong><br><br>
+            <button onclick="agregarAlCarrito('Jarrón de barro negro', 1200)">
+                Agregar al carrito
+            </button>
+        </article>
+
+    </div>
+</section>
+
+<!-- LOGIN -->
+<div id="loginBox" class="form-overlay" style="display:none;">
+    <div class="form-card">
+        <h2>Iniciar Sesión</h2>
+
+        <input type="email" id="loginCorreo" placeholder="Correo electrónico">
+        <input type="password" id="loginPass" placeholder="Contraseña">
+
+        <button onclick="login()">Entrar</button>
+
+        <p>
+            ¿No tienes cuenta?
+            <a href="#" onclick="mostrarRegistro()">Regístrate</a>
+        </p>
+    </div>
+</div>
+
+
+<!-- REGISTRO -->
+<div id="registroBox" class="form-overlay" style="display:none;">
+    <div class="form-card">
+        <h2>Crear Cuenta</h2>
+
+        <input type="email" id="regCorreo" placeholder="Correo electrónico">
+        <input type="password" id="regPass" placeholder="Contraseña">
+
+        <button onclick="registrar()">Registrarse</button>
+
+        <p>
+            ¿Ya tienes cuenta?
+            <a href="#" onclick="mostrarLogin()">Inicia sesión</a>
+        </p>
+    </div>
+</div>
+
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2026 xmex - Desarrollado por estudiantes del ITL</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="backend/auth.js"></script>
+<script src="backend/carrito.js"></script>
 
 </body>
 </html>
