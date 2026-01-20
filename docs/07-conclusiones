@@ -1,0 +1,25 @@
+# 7. Conclusiones y Lecciones Aprendidas
+
+## 7.1 Conclusiones del Proyecto
+El desarrollo de la plataforma **xmex** ha permitido al equipo aplicar de manera práctica los fundamentos de la Ingeniería de Software. Se logró diseñar una solución que no solo cumple con los requerimientos técnicos de un e-commerce, sino que también atiende una necesidad social: la digitalización de los artesanos mexicanos.
+
+La elección del modelo de calidad **ISO/IEC 25010** fue fundamental para priorizar la seguridad y la usabilidad desde las primeras etapas, evitando retrabajos costosos en el futuro. Aunque el proyecto se encuentra en una fase de prototipo funcional (MVP), la arquitectura diseñada es escalable para permitir pagos reales y envíos en versiones futuras.
+
+## 7.2 Lecciones Aprendidas
+Durante el ciclo de vida del proyecto, el equipo adquirió conocimientos clave:
+
+1.  **Trabajo Colaborativo con Git:** Comprendimos la importancia de no trabajar directamente en la rama `main` y el uso de *Pull Requests* para mantener la integridad del código.
+2.  **Documentación como Código:** El uso de Markdown y GitHub para documentar facilitó la integración entre los requisitos teóricos y el código fuente.
+3.  **Separación de Responsabilidades:** Dividir el trabajo en Frontend, Backend y Base de Datos permitió avanzar en paralelo sin bloquear el progreso de los demás compañeros.
+4.  **Importancia del Diseño:** Invertir tiempo en los wireframes y la elección de colores (Identidad xmex) antes de programar aceleró el proceso de maquetado en CSS.
+
+## 7.3 Trabajo Futuro
+Para convertir **xmex** en un producto comercial viable, se proponen las siguientes mejoras a futuro:
+
+* **Integración de Pasarela de Pagos Real:** Implementar Stripe o PayPal API para cobros con tarjeta.
+* **Módulo de Administración para Artesanos:** Un panel donde los vendedores puedan subir sus propias fotos y gestionar su stock sin intervención técnica.
+* **Aplicación Móvil Nativa:** Desarrollar una versión en React Native o Flutter para mejorar la experiencia en smartphones.
+* **Recomendaciones con IA:** Implementar un algoritmo simple que sugiera productos basados en el historial de navegación del usuario.
+
+---
+**Firmado:** Equipo de Desarrollo xmex - ITL, 5to Semestre.
